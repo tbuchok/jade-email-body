@@ -3,20 +3,22 @@ mixin body
   - s['background-color'] = attributes.bgcolor
   - compact = Object.keys(s).filter(function(k) { return s[k] !== undefined })
   - inline = compact.map(function(k) { return k + ':' + s[k] + ';' }).join('')
-  div(style = inline)
-    // [if gte mso 9]
-      v:background(xmlns:v = 'urn:schemas-microsoft-com:vml', fill = 't')
-        v:fill( type = 'tile'
-              , src = attributes.background
-              , color = attributes.bgcolor
-              )
-    table( height = '100%'
-         , width = '100%'
-         , cellpadding = 0
-         , cellspacing = 0
-         , border = 0
-         )
-      tr
-        td(valign = 'top', align = 'left', background = attributes.background)
-          if block
-            block
+  body
+    div(style = inline)
+      // [if gte mso 9]
+        v:background(xmlns:v = 'urn:schemas-microsoft-com:vml', fill = 't')
+          v:fill( type = 'tile'
+                , src = attributes.background
+                , color = attributes.bgcolor
+                )
+      table( height = '100%'
+           , width = '100%'
+           , cellpadding = 0
+           , cellspacing = 0
+           , border = 0
+           )
+        tr
+          td(valign = 'top', align = 'left', background = attributes.background)
+            if block
+              block
+      
