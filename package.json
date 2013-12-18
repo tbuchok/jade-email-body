@@ -14,5 +14,13 @@
     "test": "node test/test"
   },
   "author": "Tom Buchok <tom@buchok.com> (http://buchok.com/)",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tbuchok/jade-email-body.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tbuchok/jade-email-body/issues"
+  },
+  "homepage": "https://github.com/tbuchok/jade-email-body"
 }
