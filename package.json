@@ -1,0 +1,18 @@
+{
+  "name": "jade-email-body",
+  "version": "0.0.1",
+  "description": "Stop worrying about the junk stuff in the header.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jade": "~0.35.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/test"
+  },
+  "author": "Tom Buchok <tom@buchok.com> (http://buchok.com/)",
+  "license": "BSD-2-Clause"
+}
