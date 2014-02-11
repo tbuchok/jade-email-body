@@ -1,6 +1,6 @@
 {
   "name": "jade-email-body",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Stop worrying about the junk stuff in the header.",
   "main": "index.js",
   "directories": {
