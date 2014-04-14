@@ -3,7 +3,7 @@ mixin body
   - s['background-color'] = attributes.bgcolor
   - compact = Object.keys(s).filter(function(k) { return s[k] !== undefined })
   - inline = compact.map(function(k) { return k + ':' + s[k] + ';' }).join('')
-  body
+  body(class = attributes.class)
     div(style = inline)
       <!--[if mso]>
       v:background(xmlns:v = 'urn:schemas-microsoft-com:vml', fill = 't')
